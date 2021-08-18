@@ -5,12 +5,17 @@
             <th>Precio</th>
             <th>Imagen</th>
         </tr>
-            <% productos.forEach(function(producto) { %>
-                <tr>
-                    <td> <%= producto.title %> </td>
-                    <td><%= producto.price %> </td>
-                    <td><%= producto.thumbnail %> </td>  
-                </tr>
-            <% }) %>
+            <% if(productos.length > 0) { %>
+                <% productos.forEach(function(producto) { %>
+                    <tr>
+                        <td> <%= producto.title %> </td>
+                        <td><%= producto.price %> </td>
+                        <td><img src="<%= producto.thumbnail %>" alt=""></td>  
+                    </tr>
+                <% }) %>
+            <% } else { %>
+                    <p>No hay productos cargados</p>
+            <% } %>
+            
     </table>
 </div>

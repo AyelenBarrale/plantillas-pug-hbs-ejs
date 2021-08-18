@@ -15,11 +15,14 @@ html
                 th='Nombre'
                 th='Precio'
                 th='Imagen'
-
-            each prod in productos
-                tr
-                    td= prod.title
-                    td= prod.price
-                    td= prod.thumbnail
+            if productos.length > 0
+                each prod in productos
+                    tr
+                        td= prod.title
+                        td= prod.price
+                        td(scope="row")
+                            img(src= prod.thumbnail)
+            else
+                p='No hay productos cargados'
 
             

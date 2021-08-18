@@ -5,14 +5,17 @@
             <th>Precio</th>
             <th>Imagen</th>
         </tr>
-        {{#if exist}}
+        {{#if productos}}
             {{#each productos}}
                 <tr>
                     <td>{{this.title}} </td>
                     <td>{{this.price}} </td>
-                    <td>{{this.thumbnail}} </td>  
+                    <td><img src="{{this.thumbnail}}" alt=""></td> 
+                    
                 </tr>
             {{/each}}
+        {{else}}
+            <p>No hay productos cargados</p>
         {{/if}}
     </table>
 </div>

@@ -4,7 +4,7 @@ const app = express();
 const handlebars = require("express-handlebars");
 
 const productos = [
-  {
+  /* {
     title: "cartuchera",
     price: 20,
     thumbnail: "url",
@@ -18,7 +18,7 @@ const productos = [
     title: "regla",
     price: 7,
     thumbnail: "url",
-  },
+  }, */
 ];
 
 app.use(express.json());
@@ -49,7 +49,6 @@ app.get("/", (req, res) => {
 app.get("/productos", (req, res) => {
   res.render("productList", {
     productos,
-    exist: true,
   });
 });
 
