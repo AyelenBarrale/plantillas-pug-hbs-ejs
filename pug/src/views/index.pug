@@ -1,0 +1,23 @@
+html 
+    head 
+        title='Planilla PUG'
+        link(rel="stylesheet" href="style.css")
+    body
+        nav
+            ul
+                li
+                    a(href="/")='Formulario'
+                li
+                    a(href="/productos")='Productos'
+
+        h1=titulo
+        h3=subtitulo
+        
+        form(action="/productos" method="POST")
+            p='Titulo'
+            input(type="text" name="title")
+            p='Precio'
+            input(type="number" name="price")
+            p='URL de imagen'
+            input(type="text" name="thumbnail")
+            button(type="submit")='Enviar Producto'

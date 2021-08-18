@@ -1,0 +1,25 @@
+html 
+    head 
+        title='Planilla PUG'
+        link(rel="stylesheet" href="style.css")
+    body
+        nav
+            ul
+                li
+                    a(href="/")='Formulario'
+                li
+                    a(href="/productos")='Productos'
+
+        table
+            tr
+                th='Nombre'
+                th='Precio'
+                th='Imagen'
+
+            each prod in productos
+                tr
+                    td= prod.title
+                    td= prod.price
+                    td= prod.thumbnail
+
+            
