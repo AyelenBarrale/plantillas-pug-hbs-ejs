@@ -3,15 +3,15 @@ html
         title='Planilla PUG'
         link(rel="stylesheet" href="style.css")
     body
-        nav
+        nav(class='navbar navbar-container')
             ul
                 li
                     a(href="/")='Formulario'
                 li
                     a(href="/productos")='Productos'
 
-        h1=titulo
-        h3=subtitulo
+        h1(class='titles-container')=titulo
+        h3(class='titles-container')=subtitulo
         
         form(action="/productos" method="POST")
             p='Titulo'

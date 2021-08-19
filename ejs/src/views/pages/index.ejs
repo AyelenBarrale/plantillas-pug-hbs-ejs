@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantilla EJS</title>
-    <link rel="stylesheet" href="../../../public/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
-    <div>
+    <div class="navbar-container">
         <%- include('../partials/navbar') %>
     </div>
-    <div>
+    <div class="titles-container">
         <h1>Productos</h1>
         <h3>Incluye tus items</h3>
         <%- include('../partials/formulario') %>

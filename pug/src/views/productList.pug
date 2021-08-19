@@ -3,14 +3,14 @@ html
         title='Planilla PUG'
         link(rel="stylesheet" href="style.css")
     body
-        nav
+        nav(class='navbar navbar-container')
             ul
                 li
                     a(href="/")='Formulario'
                 li
                     a(href="/productos")='Productos'
 
-        table
+        table(class='table-container')
             tr
                 th='Nombre'
                 th='Precio'
@@ -23,6 +23,6 @@ html
                         td(scope="row")
                             img(src= prod.thumbnail)
             else
-                p='No hay productos cargados'
+                p(class='titles-container')='No hay productos cargados'
 
             

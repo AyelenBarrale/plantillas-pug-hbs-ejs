@@ -1,0 +1,60 @@
+html {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  .navbar-container {
+    display: flex;
+    background-color: rgb(173, 171, 171);
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  li {
+    list-style: none;
+  }
+  li:not(:first-child) {
+    padding-left: 3rem;
+  }
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+  }
+  a:hover {
+    color: brown;
+  }
+  .titles-container,
+  form {
+    margin-left: 2rem;
+  }
+  button {
+    border-radius: 5px;
+    background-color: rgb(173, 171, 171);
+    padding: 0.2rem 0.5rem;
+  }
+  .table-container {
+      margin-left: 1rem;
+      margin-top: 1rem;
+  }
+  tr {
+      text-align: center;
+  }
+  th {
+      background-color: rgb(212, 209, 209);
+      text-align: center;
+      align-content: center;
+      width: 12rem;
+  }
+  td {
+      padding: 1rem 0;
+      background-color: rgb(243, 247, 243);
+  }
+  img {
+      width: 15%;
+  }

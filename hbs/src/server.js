@@ -5,19 +5,19 @@ const handlebars = require("express-handlebars");
 
 const productos = [
   /* {
-    title: "cartuchera",
-    price: 20,
-    thumbnail: "url",
+    title: "monitor",
+    price: 3000,
+    thumbnail: "https://cdn3.iconfinder.com/data/icons/device-and-technology-9/64/2-Computer-256.png",
   },
   {
-    title: "lapicero",
-    price: 5,
-    thumbnail: "url",
+    title: "ipod",
+    price: 1000,
+    thumbnail: "https://cdn3.iconfinder.com/data/icons/device-and-technology-9/64/6-Music_Player-256.png",
   },
   {
-    title: "regla",
-    price: 7,
-    thumbnail: "url",
+    title: "mouse",
+    price: 500,
+    thumbnail: "https://cdn3.iconfinder.com/data/icons/device-and-technology-9/64/3-Mouse-256.png",
   }, */
 ];
 
@@ -26,7 +26,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.engine(
   "hbs",
-  //función que incluye el objeto
   handlebars({
     extname: ".hbs",
     defaultLayout: "index.hbs",
